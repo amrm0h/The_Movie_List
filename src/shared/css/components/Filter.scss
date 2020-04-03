@@ -1,0 +1,47 @@
+section.filter {
+    float: left;
+    margin: 0 3% 0 0;
+    padding: 2rem 1.3rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.3rem 0.2rem $gray,
+                0 0 0.5rem 0.4rem $gray;
+    background: #fbf8f8;
+    width: 20%;
+    min-height: 20rem;
+    text-align: center;
+    @include trans();
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    label {
+        color: #960a2c;
+        font-size: 2rem;
+        display: block;
+        border-bottom: 0.3rem solid $gray;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        @include trans();
+        .svg-inline--fa {
+            vertical-align: -0.2em;
+            transition: inherit;
+            &.fa-w-16 {width: 1.3rem}
+        }
+    }
+    select {
+        outline: none;
+        width: 88%;
+        padding: 0.7rem 1rem;
+        border: none;
+        box-shadow: 0 0 0.3rem 0.2rem $gray,
+                    0 0 0.5rem 0.4rem $gray;
+        border-radius: 0.6rem;
+        background: #ffffff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #960a2c;
+        cursor: pointer;
+        @include trans();
+    }
+}

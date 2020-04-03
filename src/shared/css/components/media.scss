@@ -1,0 +1,244 @@
+@media screen and (max-width: 1200px) {
+    body {padding-top: 10rem}
+
+    header div.container {
+        h1 {font-size: 3.1rem}
+        nav {
+            font-size: 1.2rem;
+            ul li {
+                margin-right: 2rem;
+                a {width: 10rem}
+            }
+        }
+    }
+
+    section.movies {
+        > div > div.movie_card {
+            margin-bottom: 3.5rem;
+            article h4 {font-size: 1.3rem;line-height: 1.3}
+            & > div {padding: 9rem 0}
+        }
+        &.fav h1 button {transform: translate(-3.4rem,-0.5rem)}
+    } 
+    div.fetch_error,
+    div.loading_page,
+    div.not_found_error {font-size: 1.8rem;letter-spacing: 0.07rem}
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+    section.filter {
+        border-radius: 1.6rem;
+        width: 30%;
+        min-height: 18rem;
+        label {
+            font-size: 1.9rem;
+            margin-bottom: 1.6rem;
+            .svg-inline--fa.fa-w-16 {width: 1.1rem}
+        }
+        select {
+            width: 90%;
+            padding: 0.5rem 0.6rem;
+            box-shadow: 0 0 0.2rem 0.1rem $gray,
+                        0 0 0.3rem 0.3rem $gray;
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    section.search {width: 67%}
+
+    section.movies {
+        padding-left: 33%;
+        &.fav {
+            > div {
+            p.no_fav {font-size: 1.7rem;letter-spacing: 0.03rem}
+            div.movie_card {
+                margin-bottom: 1.5rem;
+                flex-basis: 22%;
+            }
+        }
+        h1 button {transform: translate(-2.6rem,-0.5rem)}
+        }
+        & > div {
+            padding-top: 2rem;
+            > div.movie_card {
+                flex-basis: 32%;
+                margin-bottom: 2rem;
+                border-radius: 1.5rem;
+                article {
+                    padding: 0 0.5rem;
+                    h4 {line-height: 1.2;padding: 2.3rem 0 0}
+                }
+                & > div {
+                    padding: 8rem 0;
+                    p {
+                        line-height: 1.4;
+                        padding: 0 1rem;
+                        font-size: 1.2rem;
+                        letter-spacing: 0.02rem;
+                        margin-bottom: 1.9rem;
+                    }
+                    button {padding: 1.15rem;font-size: 1rem}
+                }
+            }
+        }
+        p.not_found_search {
+            font-size: 1.6rem;
+            padding-top: 1.5%
+        }
+    }
+    div.fetch_error,
+    div.loading_page,
+    div.not_found_error {font-size: 1.5rem;letter-spacing: 0.05rem}
+
+}
+
+@media screen and (max-width: 768px) {
+    body {padding-top: 9rem}
+
+    header div.container {
+        h1 {font-size: 2.8rem}
+        nav {
+            font-size: 1rem;
+            ul li {
+                margin-right: 0.7rem;
+                a {width: 7.3rem}
+            } 
+        }
+    }
+
+    section.filter {
+        border-radius: 1.3rem;
+        min-height: 15rem;
+        label {
+            font-size: 1.7rem;
+            margin-bottom: 1.35rem;
+            padding-bottom: 0.7rem;
+            .svg-inline--fa.fa-w-16 {width: 1rem}
+        }
+        select {
+            padding: 0.4rem 0.3rem;
+            border-radius: 0.4rem;
+            font-size: 1.1rem;
+        }
+    }
+
+    section.search div.search_input {
+            input {
+                border-radius: 0.8rem;
+                border-bottom: 0.2rem solid #e8d8d8;
+            }
+            .svg-inline--fa {left: 0.8rem}
+    }
+
+    section.movies {
+        padding-left: 33%;
+        &.fav {
+            > div {
+                p.no_fav {font-size: 1.5rem}
+                div.movie_card {
+                    flex-basis: 30%;
+                }
+            }
+            h1 {
+                font-size: 1.6rem;padding: 0 0 2rem 0;
+                button {
+                    padding: 0.6rem 2.3rem;
+                    font-size: 1.3rem;
+                    transform: translate(-2.6rem,-0.5rem);
+                }
+            }
+        }
+        & > div > div.movie_card {
+            flex-basis: 47%;
+            border-radius: 1.2rem;
+            article h4 {line-height: 1.1;padding: 2.1rem 0 0}
+            & > div {
+                padding: 6.5rem 0;
+                p {margin-bottom: 1.8rem}
+                button {padding: 1.1rem;font-size: 0.9rem}
+            }
+        }
+    }
+    div.fetch_error,
+    div.loading_page,
+    div.not_found_error {font-size: 1.3rem}
+
+}
+
+@media screen and (max-width: 576px) {
+    body {padding-top: 8rem}
+
+    header div.container h1 {font-size: 2.5rem}
+
+    section.filter {
+        label {
+            font-size: 1.5rem;
+            border-bottom: 0.2rem solid $gray;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+        }
+        select {
+            border-radius: 0.3rem;
+            font-size: 1rem;
+        }
+    }
+
+    section.search div.search_input {
+        input {border-radius: 0.6rem}
+        .svg-inline--fa {left: 0.7rem}
+    }
+
+    section.movies {
+        &.fav {
+            > div p.no_fav {font-size: 1.3rem}
+            h1 {
+                font-size: 1.2rem;padding: 0 0 1rem 0;
+                button {padding: 0.4rem 2rem;font-size: 1.2rem;transform: translate(-2rem,-0.5rem)}
+            }
+        }
+            & > div {
+            > div.movie_card {
+                article {
+                    h4 {
+                        font-size: 1.2rem;
+                        line-height: 1;
+                        padding: 1.8rem 0 0;
+                        min-height: 4.3rem;
+                    }
+                    span {font-size: 0.8rem}
+                }
+                & > div {
+                    padding: 4rem 0;
+                    p {
+                        min-height: 7.2rem;
+                        line-height: 1.2;
+                        font-size: 1rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    button {
+                        padding: 1rem;
+                        font-size: 0.8rem;
+                        color: white;
+                        letter-spacing: 0.02rem;
+                    }
+                }
+            }
+        }
+        p.not_found_search {
+            font-size: 1.3rem;
+            padding-top: 1%
+        }
+    }
+    div.loading_page {
+        .svg-inline--fa.fa-1x.fa-w-16 {
+            height: 1.6rem;
+            right: 3rem;
+            bottom: -0.1rem;
+        }
+        .spinner-border {width: 3rem;height: 3rem}
+    } 
+}

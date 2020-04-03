@@ -1,0 +1,54 @@
+
+
+/* Color Variavle */
+$gray: #e4e2e2;
+$purple: #d417d8;
+
+/* Mixins */
+@mixin trans($p:all) {
+    transition: $p 0.3s ease-in-out;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Spicy Rice', cursive;
+    src: url("../fonts/Spicy_Rice/SpicyRice-Regular.ttf") format(ttf);
+
+}
+
+/* genral styles */
+
+* {box-sizing: border-box}
+
+html {font-size: 62.5%}
+
+body {
+    font-family: Arial, Tahoma;
+    padding-top: 11rem;
+    overflow-y: scroll;
+    @include trans(padding-top);
+}
+
+input,input:focus,input:active, 
+button,button:active,button:focus {outline: none}
+a:focus {outline: none}
+button{
+    cursor: pointer;
+    background: transparent;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.d-flex {display: flex}
+
+.container {
+    width: 95%;
+    max-width: 112rem;
+    margin: auto
+}
+
+a:active {color: black}
